@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Ensure minimum touch target sizes */
+  button, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent text from being too small on mobile */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+}
